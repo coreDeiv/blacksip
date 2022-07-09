@@ -1,12 +1,16 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop", 
+      "header-layout.mobile"
+    ]
   },
   "header.full": {
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header-layout.desktop": {
     "children": [
+      "header-row#header-hero",
       "sticky-layout#desktop"
     ]
   },
@@ -75,5 +79,24 @@
   },
   "drawer": {
     "children": []
+  },
+
+  // Custom Blocks
+  // -- Hero slider gif --
+  "header-row#header-hero": {
+    "children": [
+      "image#header-hero-carousel-1"
+    ],
+    "props": {
+      "blockClass": "header-hero-gif",
+      "fullWidth": true
+    }
+  },
+  "image#header-hero-carousel-1": {
+    "props": {
+      "url": "/arquivos/hero-1.gif",
+      "alt": "carousel-image-gif",
+      "maxHeight": 100
+    }
   }
 }

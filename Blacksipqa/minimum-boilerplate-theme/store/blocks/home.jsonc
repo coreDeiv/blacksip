@@ -1,15 +1,117 @@
 {
+  // Build Blocks
+
   "store.home": { 
     "blocks": [
-      "rich-text"
+      "flex-layout.row#jumbotron-1",
+      "rich-text#favourite-title",
+      "list-context.image-list#brands-carousel"
     ]
   },
-  "rich-text": { 
-    "props": { 
-      "text": "VTEX Store Framework",
+
+  // Declare Blocks
+
+  "flex-layout.row#jumbotron-1": {
+    "children": [
+      "image#jumbotron"
+    ],
+    "props": {
+      "blockClass": "main-jumbotron",
+      "fullWidth": true
+    }
+  },
+  "list-context.image-list#brands-carousel": {
+    "children": ["slider-layout#brands-carousel--items"],
+    "props": {
+      "height": 75,
+      "images": [
+        {
+          "image": "/arquivos/avengers.png"
+        },
+        {
+          "image": "/arquivos/barbie.png"
+        },
+        {
+          "image": "/arquivos/batman.png"
+        },
+        {
+          "image": "/arquivos/disney.png"
+        },
+        {
+          "image": "/arquivos/disney2.png"
+        },
+        {
+          "image": "/arquivos/disney3.png"
+        },
+        {
+          "image": "/arquivos/disney4.png"
+        },
+        {
+          "image": "/arquivos/dragonball.png"
+        },
+        {
+          "image": "/arquivos/frozen.png"
+        },
+        {
+          "image": "/arquivos/hellokitty.png"
+        },
+        {
+          "image": "/arquivos/justiceleague.png"
+        },
+        {
+          "image": "/arquivos/marvel.png"
+        },
+        {
+          "image": "/arquivos/playstation.png"
+        },
+        {
+          "image": "/arquivos/rayo.png"
+        },
+        {
+          "image": "/arquivos/spiderman.png"
+        },
+        {
+          "image": "/arquivos/w.png"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#brands-carousel--items": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 11,
+        "tablet": 7,
+        "phone": 3
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "marks_carousel",
+      "autoplay": {
+        "timeout": 3000,
+        "delay": 1000
+      }
+    }
+  },
+
+  // Specific content of the blocks
+
+  "image#jumbotron": {
+    "props": {
+      "src": "/arquivos/hero-1.gif",
+      "maxHeight": 750,
+      "alt": "Monster Banner 1"
+    }
+  },
+
+  "rich-text#favourite-title": {
+    "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "font": "t-heading-1"
+      "text": "ENCUENTRA TU FAVORITO, **PRODUCTOS LICENCIADOS**",
+      "blockClass": "favourite-title"
     }
   }
+
 }
