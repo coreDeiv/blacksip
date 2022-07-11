@@ -53,6 +53,16 @@
   position: relative;
 }
 
+.link--boysGirlsTitle--item 
+.strong--boysGirlsTitle--item {
+  text-decoration: none;
+  font-family: 'Lexend', sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  width: 100%;
+}
+
 .link--boysGirlsTitle--item::after {
   content: "›";
   position: absolute;
