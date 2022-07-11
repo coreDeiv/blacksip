@@ -25,3 +25,8 @@
   align-items: center;
   font-weight: bold;
 }
+
+.imageElement--boysGirlsImage--item {
+  width: 100%;
+  padding-right: .75rem;
+}

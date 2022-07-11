@@ -34,3 +34,43 @@
   z-index: 2;
   text-transform: uppercase;
 }
+
+.strong--boysGirlsTitle--item {
+  font-family: 'Lexend', sans-serif;
+  font-size: 25px;
+  color: #333;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.link--boysGirlsTitle--item {
+  text-decoration: none;
+  font-family: 'Lexend', sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  width: 100%;
+  position: relative;
+}
+
+.link--boysGirlsTitle--item::after {
+  content: "›";
+  position: absolute;
+  top: -25%;
+  left: 110%;
+  color: #fff;
+  font-size: 20px;
+  background-color: #f18a00;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.link--boysGirlsTitle--item::after:hover {
+  background-color: rgba(241, 138, 0, 0.9) !important;
+  transition: ease .3s all;
+}

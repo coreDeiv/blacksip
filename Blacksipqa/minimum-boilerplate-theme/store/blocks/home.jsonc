@@ -6,7 +6,9 @@
       "flex-layout.row#jumbotron-1",
       "rich-text#favourite-title",
       "list-context.image-list#brands-carousel",
-      "flex-layout.row#banner-carousel_products"
+      "flex-layout.row#banner-carousel_products",
+      "flex-layout.row#boys-girls",
+      "flex-layout.row#boys-girls--titles"
     ]
   },
 
@@ -121,6 +123,24 @@
     }
   },
 
+  "flex-layout.row#boys-girls": {
+    "children": [
+      "image#buttonImage-boys",
+      "image#buttonImage-girls"
+    ],
+    "props": {
+      "blockClass": "boys-girls-section",
+      "fullWidth": false
+    }
+  },
+
+  "flex-layout.row#boys-girls--titles": {
+    "children": [
+      "rich-text#boysTitle",
+      "rich-text#girlsTitle"
+    ]
+  },
+
   // Specific content of the blocks
 
   "image#jumbotron": {
@@ -149,6 +169,7 @@
       "product-summary-buy-button"
     ]
   },
+
   "slider-layout#banner-carousel_products--items": {
     "props": {
       "itemsPerPage": {
@@ -160,6 +181,42 @@
       "fullWidth": false,
       "showNavigationArrows": "desktopOnly",
       "showPaginationDots": "desktopOnly"
+    }
+  },
+
+  "image#buttonImage-boys": {
+    "props": {
+      "src": "/arquivos/niños.jpg",
+      "alt": "section boys",
+      "link": "https://www.mic.com.co/mic/nino",
+      "blockClass": "boysGirlsImage--item"
+    }
+  },
+
+  "image#buttonImage-girls": {
+    "props": {
+      "src": "/arquivos/niñas.jpg",
+      "alt": "section girls",
+      "link": "https://www.mic.com.co/mic/nina",
+      "blockClass": "boysGirlsImage--item"
+    }
+  },
+
+  "rich-text#boysTitle": {
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "left",
+      "text": "**La temporada de verano ya llegó** \n [Compra ahora ](https://duckduckgo.com)",
+      "blockClass": "boysGirlsTitle--item"
+    }
+  },
+
+  "rich-text#girlsTitle": {
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "left",
+      "text": "**La diversión en el agua espera por ti** \n [Compra ahora ](https://duckduckgo.com)",
+      "blockClass": "boysGirlsTitle--item"
     }
   }
 
