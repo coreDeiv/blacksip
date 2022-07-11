@@ -9,6 +9,107 @@
   text-align: center;
 }
 
-.flexRow--boys-girls-section {
+.flexRow--boys-girls-section,
+.flexRowContent--promo-sliderCollection {
   margin-top: 75px;
+}
+
+.flexRowContent--promo-sliderCollection {
+  position: relative;
+}
+
+.flexRowContent--promo-sliderCollection
+.stretchChildrenWidth:first-child {
+  width: 37% !important;
+}
+
+.flexRowContent--promo-sliderCollection
+.stretchChildrenWidth:last-child {
+  width: calc(100% - 37%) !important;
+}
+
+.flexCol--sliderCollection {
+  background-color: #f3f3f3;
+  padding: 0 42px;
+}
+
+.flexCol--sliderCollection
+.flexColChild--sliderCollection:last-child {
+  height: auto !important;
+  position: absolute;
+  bottom: 0;
+  right: 24px;
+}
+
+.flexCol--sliderCollection
+.flexColChild--sliderCollection:nth-child(2n) {
+  width: calc(100% + (42px * 2));
+  margin-left: -42px;
+  padding-bottom: 1.5rem;
+}
+
+.flexCol--sliderCollection
+.flexColChild--sliderCollection:nth-child(2n)
+:global(.vtex-product-summary-2-x-image) {
+  height: 180px !important;
+}
+
+.flexCol--sliderCollection
+.flexColChild--sliderCollection:nth-child(2n)
+:global(.vtex-slider-layout-0-x-slide)  {
+  padding: 1rem;
+}
+
+.flexCol--sliderCollection
+.flexColChild--sliderCollection:nth-child(2n)
+:global(.vtex-slider-layout-0-x-slide) 
+:global(.vtex-product-summary-2-x-priceContainer) {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.flexCol--sliderCollection
+.flexColChild--sliderCollection:nth-child(2n)
+:global(.vtex-slider-layout-0-x-slide) 
+:global(.vtex-product-summary-2-x-description) {
+  color: #333;
+  letter-spacing: .01em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: 'Lexend', sans-serif;
+  display: block;
+  width: 219px;
+  min-height: 32px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.flexCol--sliderCollection
+.flexColChild--sliderCollection:nth-child(2n)
+:global(.vtex-slider-layout-0-x-slide) 
+:global(.vtex-product-summary-2-x-currencyContainer) {
+  font-weight: bold;
+}
+
+.flexCol--sliderCollection
+:global(.vtex-slider-layout-0-x-paginationDot) {
+  width: calc(100% / 4) !important;
+  border-radius: 0 !important;
+  margin: 0.0315rem;
+  height: 5px !important;
+}
+
+.flexCol--sliderCollection
+:global(.vtex-slider-layout-0-x-paginationDot):first-child {
+  border-top-left-radius: 50px !important;
+  border-bottom-left-radius: 50px !important;
+}
+
+.flexCol--sliderCollection
+:global(.vtex-slider-layout-0-x-paginationDot):last-child {
+  border-top-right-radius: 50px !important;
+  border-bottom-right-radius: 50px !important;
 }

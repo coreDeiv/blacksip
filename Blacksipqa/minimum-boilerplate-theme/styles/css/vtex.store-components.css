@@ -30,3 +30,10 @@
   width: 100%;
   padding-right: .75rem;
 }
+
+.imageElement--promo-collection {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}

@@ -84,3 +84,43 @@
   background-color: rgba(241, 138, 0, 0.9) !important;
   transition: ease .3s all;
 }
+
+.paragraph--sliderCollection--title {
+  color: #131e29;
+  font-family: 'Lexend', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+  margin: 38px 0 61px 0;
+}
+
+.container--sliderCollection--link {
+  text-align: right;
+}
+
+.container--sliderCollection--link
+.wrapper--sliderCollection--link {
+  width: 100%;
+}
+
+.container--sliderCollection--link
+.link--sliderCollection--link {
+  text-decoration: none;
+}
+
+.container--sliderCollection--link
+.link--sliderCollection--link
+.strong--sliderCollection--link {
+  color: #f18a00;
+  font-family: 'Lexend', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+  margin: 0;
+  width: 100%;
+  text-decoration: none;
+}

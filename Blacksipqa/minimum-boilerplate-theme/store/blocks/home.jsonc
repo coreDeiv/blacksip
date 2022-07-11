@@ -8,7 +8,8 @@
       "list-context.image-list#brands-carousel",
       "flex-layout.row#banner-carousel_products",
       "flex-layout.row#boys-girls",
-      "flex-layout.row#boys-girls--titles"
+      "flex-layout.row#boys-girls--titles",
+      "flex-layout.row#promo-sliderCollection"
     ]
   },
 
@@ -116,7 +117,7 @@
   },
   
   "list-context.product-list#banner-carousel_products": {
-    "blocks": ["product-summary.shelf"],
+    "blocks": ["product-summary.shelf#firstSlider"],
     "children": ["slider-layout#banner-carousel_products--items"],
     "props": {
       "orderBy": "OrderByTopSaleDESC"
@@ -141,6 +142,31 @@
     ]
   },
 
+  "flex-layout.row#promo-sliderCollection": {
+    "children": [
+      "image#promoCollection",
+      "flex-layout.col#sliderCollection"
+    ],
+    "props": {
+      "blockClass": "promo-sliderCollection",
+      "fullWidth": false
+    }
+  },
+
+  // Sub blocks
+
+  "flex-layout.col#sliderCollection": {
+    "children": [
+      "rich-text#sliderCollection--title",
+      "list-context.product-list#banner-carousel_products",
+      "rich-text#sliderCollection--link"
+    ],
+    "props": {
+      "blockClass": "sliderCollection",
+      "fullWidth": false
+    }
+  },
+
   // Specific content of the blocks
 
   "image#jumbotron": {
@@ -160,7 +186,7 @@
     }
   },
 
-  "product-summary.shelf": {
+  "product-summary.shelf#firstSlider": {
     "children": [
       "product-summary-image",
       "product-summary-brand",
@@ -171,6 +197,10 @@
   },
 
   "slider-layout#banner-carousel_products--items": {
+    /*
+      * First carousel - Summary Products Shelf
+      * Second carousel - Promo Carousel
+    */  
     "props": {
       "itemsPerPage": {
         "desktop": 4,
@@ -217,6 +247,34 @@
       "textPosition": "left",
       "text": "**La diversión en el agua espera por ti** \n [Mira nuevos diseños **aqui** ](https://duckduckgo.com)",
       "blockClass": "boysGirlsTitle--item"
+    }
+  },
+
+  "image#promoCollection": {
+    "props": {
+      "src": "/arquivos/promo-collection.png",
+      "alt": "promo collection",
+      "link": "https://www.mic.com.co/mic/promo-collection",
+      "blockClass": "promo-collection"
+    }
+  },
+
+  "rich-text#sliderCollection--title": {
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "left",
+      "text": "**Al infinito y mas alla...**",
+      "blockClass": "sliderCollection--title"
+    }
+  },
+
+  "rich-text#sliderCollection--link": {
+    "props": {
+      "textAlignment": "center",
+      "textPosition": "center",
+      "text": "[**Ver todo**](https://www.mic.com.co/mic/promo-collection)",
+      "blockClass": "sliderCollection--link",
+      "textColor": "mainPrimary"
     }
   }
 
