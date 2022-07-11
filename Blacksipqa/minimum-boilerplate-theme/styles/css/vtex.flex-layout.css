@@ -1,0 +1,10 @@
+.flexRowContent--banner-carousel_products {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexRowContent--banner-carousel_products
+.stretchChildrenWidth {
+  width: 100% !important;
+  text-align: center;
+}

@@ -1,0 +1,74 @@
+.productBrandContainer {
+  text-align: left;
+}
+
+.image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  background-color: #f2f2f2;
+  margin-bottom: 1rem;
+}
+
+.productBrandName {
+  color: #bdbdbd;
+  letter-spacing: .01em;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  font-family: 'Lexend', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.priceContainer {
+  text-align: left;
+}
+
+.productPriceClass {
+  width: 100%;
+}
+
+.buyButton {
+  background-color: #f18a00;
+  width: 90%;
+  margin: auto;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.buyButton :global(.vtex-button)  {
+  background-color: #f18a00;
+  border-color: #f18a00;
+  font-weight: bold;
+  font-family: 'Lexend', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.description {
+  color: #333;
+  letter-spacing: .01em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: 'Lexend', sans-serif;
+  display: block;
+  width: 219px;
+  min-height: 32px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.price_installmentContainer,
+.price_listPriceContainer,
+.price_sellingPriceLabel {
+  display: none;
+}
+

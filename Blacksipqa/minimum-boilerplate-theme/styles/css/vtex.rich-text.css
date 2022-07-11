@@ -1,0 +1,36 @@
+.container--favourite-title {
+  margin-top: 75px;
+}
+
+.paragraph--favourite-title {
+  color: #131e29;
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.container--banner-carousel_products--title {
+  width: 100%;
+  margin-top: 75px;
+}
+
+.container--banner-carousel_products--title 
+.wrapper--banner-carousel_products--title {
+  text-align: center;
+  width: 100%;
+}
+
+.container--banner-carousel_products--title 
+.wrapper--banner-carousel_products--title 
+.paragraph--banner-carousel_products--title {
+  color: #131e29;
+  font-family: 'Lexend', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+}

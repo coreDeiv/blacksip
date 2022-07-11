@@ -5,7 +5,8 @@
     "blocks": [
       "flex-layout.row#jumbotron-1",
       "rich-text#favourite-title",
-      "list-context.image-list#brands-carousel"
+      "list-context.image-list#brands-carousel",
+      "flex-layout.row#banner-carousel_products"
     ]
   },
 
@@ -20,6 +21,7 @@
       "fullWidth": true
     }
   },
+  
   "list-context.image-list#brands-carousel": {
     "children": ["slider-layout#brands-carousel--items"],
     "props": {
@@ -80,18 +82,42 @@
   "slider-layout#brands-carousel--items": {
     "props": {
       "itemsPerPage": {
-        "desktop": 11,
+        "desktop": 7,
         "tablet": 7,
         "phone": 3
       },
       "infinite": true,
-      "showNavigationArrows": "never",
-      "showPaginationDots": "never",
-      "blockClass": "marks_carousel",
-      "autoplay": {
-        "timeout": 3000,
-        "delay": 1000
-      }
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "desktopOnly",
+      "blockClass": "marks_carousel"
+    }
+  },
+  
+  "flex-layout.row#banner-carousel_products": {
+    "children": [
+      "rich-text#banner-carousel_products--title",
+      "list-context.product-list#banner-carousel_products"
+    ],
+    "props": {
+      "blockClass": "banner-carousel_products",
+      "fullWidth": false
+    }
+  },
+
+  "rich-text#banner-carousel_products--title" : {
+    "props": {
+      "text": "Un look completo con",
+      "textAlignment": "center",
+      "textPosition": "center",
+      "blockClass": "banner-carousel_products--title"
+    }
+  },
+  
+  "list-context.product-list#banner-carousel_products": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#banner-carousel_products--items"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
     }
   },
 
@@ -111,6 +137,29 @@
       "textPosition": "CENTER",
       "text": "ENCUENTRA TU FAVORITO, **PRODUCTOS LICENCIADOS**",
       "blockClass": "favourite-title"
+    }
+  },
+
+  "product-summary.shelf": {
+    "children": [
+      "product-summary-image",
+      "product-summary-brand",
+      "product-summary-description",
+      "product-summary-price",
+      "product-summary-buy-button"
+    ]
+  },
+  "slider-layout#banner-carousel_products--items": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 0,
+        "phone": 0
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "desktopOnly"
     }
   }
 
