@@ -9,7 +9,8 @@
       "flex-layout.row#banner-carousel_products",
       "flex-layout.row#boys-girls",
       "flex-layout.row#boys-girls--titles",
-      "flex-layout.row#promo-sliderCollection"
+      "flex-layout.row#promo-sliderCollection",
+      "flex-layout.row#multitab-sliderCollection"
     ]
   },
 
@@ -153,6 +154,16 @@
     }
   },
 
+  "flex-layout.row#multitab-sliderCollection": {
+    "children": [
+      "flex-layout.col#multiTab-sliderCollection--content"
+    ],
+    "props": {
+      "blockClass": "multiTab-sliderCollection",
+      "fullWidth": false
+    }
+  },
+
   // Sub blocks
 
   "flex-layout.col#sliderCollection": {
@@ -164,6 +175,52 @@
     "props": {
       "blockClass": "sliderCollection",
       "fullWidth": false
+    }
+  },
+
+  "flex-layout.col#multiTab-sliderCollection--content": {
+    "children": [
+      "rich-text#multiTab-sliderCollection--title",
+      "tab-layout#multiTab-sliderCollection--container"
+    ],
+    "props": {
+      "blockClass": "multiTab-sliderCollection--content",
+      "fullWidth": false
+    }
+  }, 
+
+  "tab-layout#multiTab-sliderCollection--container": {
+    "children": [
+      "tab-list#multiTab-sliderCollection--buttons",
+      "tab-content#multiTab-sliderCollection--items"
+    ],
+    "props": {
+      "blockClass": "multiTab-sliderCollection--container",
+      "defaultActiveTabId": "mtsc-girl"
+    }
+  }, 
+
+  "tab-list#multiTab-sliderCollection--buttons": {
+    "children": [
+      "tab-list.item#multiTab-sliderCollection--girl",
+      "tab-list.item#multiTab-sliderCollection--boy",
+      "tab-list.item#multiTab-sliderCollection--characters",
+      "tab-list.item#multiTab-sliderCollection--new"
+    ],
+    "props": {
+      "blockClass": "multiTab-sliderCollection--buttons"
+    }
+  },
+
+  "tab-content#multiTab-sliderCollection--items": {
+    "children": [
+      "tab-content.item#multiTab-sliderCollection--girl",
+      "tab-content.item#multiTab-sliderCollection--boy",
+      "tab-content.item#multiTab-sliderCollection--character",
+      "tab-content.item#multiTab-sliderCollection--new"
+    ],
+    "props": {
+      "blockClass": "multiTab-sliderCollection--items"
     }
   },
 
@@ -275,6 +332,91 @@
       "text": "[**Ver todo**](https://www.mic.com.co/mic/promo-collection)",
       "blockClass": "sliderCollection--link",
       "textColor": "mainPrimary"
+    }
+  },
+
+  "rich-text#multiTab-sliderCollection--title": {
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "left",
+      "text": "Creamos outfits **llenos de magia**",
+      "blockClass": "multiTab-sliderCollection--title"
+    }
+  },
+
+  "tab-list.item#multiTab-sliderCollection--girl": {
+    "props": {
+      "tabId": "mtsc-girl",
+      "label": "Niña",
+      "defaultActiveTab": true,
+      "blockClass": "multiTab-sliderCollection--buttonItem"
+    }
+  },
+
+  "tab-list.item#multiTab-sliderCollection--boy": {
+    "props": {
+      "tabId": "mtsc-boy",
+      "label": "Niño",
+      "defaultActiveTab": false,
+      "blockClass": "multiTab-sliderCollection--buttonItem"
+    }
+  },
+
+  "tab-list.item#multiTab-sliderCollection--characters": {
+    "props": {
+      "tabId": "mtsc-char",
+      "label": "Personajes",
+      "defaultActiveTab": false,
+      "blockClass": "multiTab-sliderCollection--buttonItem"
+    }
+  },
+
+  "tab-list.item#multiTab-sliderCollection--new": {
+    "props": {
+      "tabId": "mtsc-new",
+      "label": "Lo nuevo",
+      "defaultActiveTab": false,
+      "blockClass": "multiTab-sliderCollection--buttonItem"
+    }
+  },
+
+  "tab-content.item#multiTab-sliderCollection--girl": {
+    "children": [
+      "list-context.product-list#banner-carousel_products"
+    ],
+    "props": {
+      "tabId": "mtsc-girl",
+      "blockClass": "multiTab-sliderCollection--contentItem"
+    }
+  },
+
+  "tab-content.item#multiTab-sliderCollection--boy": {
+    "children": [
+      "list-context.product-list#banner-carousel_products"
+    ],
+    "props": {
+      "tabId": "mtsc-boy",
+      "blockClass": "multiTab-sliderCollection--contentItem"
+    }
+  },
+
+  "tab-content.item#multiTab-sliderCollection--character": {
+    "children": [
+      "list-context.product-list#banner-carousel_products"
+    ],
+    "props": {
+      "tabId": "mtsc-char",
+      "blockClass": "multiTab-sliderCollection--contentItem"
+    }
+  },
+  
+  "tab-content.item#multiTab-sliderCollection--new": {
+    "children": [
+      "list-context.product-list#banner-carousel_products"
+    ],
+    "props": {
+      "tabId": "mtsc-new",
+      "blockClass": "multiTab-sliderCollection--contentItem"
     }
   }
 

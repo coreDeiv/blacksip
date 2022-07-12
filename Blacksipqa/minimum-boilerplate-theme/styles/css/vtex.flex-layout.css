@@ -113,3 +113,25 @@
   border-top-right-radius: 50px !important;
   border-bottom-right-radius: 50px !important;
 }
+
+.flexRow--multiTab-sliderCollection {
+  background-color: #f2f2f2;
+  margin-top: 75px;
+  padding: 0px 59px 35px;
+}
+
+.flexRowContent--multiTab-sliderCollection
+.stretchChildrenWidth 
+.flexCol--multiTab-sliderCollection--content {
+  position: relative;
+}
+
+.flexRowContent--multiTab-sliderCollection
+.stretchChildrenWidth 
+.flexCol--multiTab-sliderCollection--content
+.flexColChild--multiTab-sliderCollection--content:first-child {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  height: auto !important;
+}
