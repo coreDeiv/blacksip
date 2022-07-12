@@ -156,3 +156,38 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+.wrapper--childrenShop-title {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-top: 75px;
+  max-width: 864px;
+}
+
+.heading--childrenShop-title {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.wrapper--childrenShop-description {
+  max-width: 864px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.paragraph--childrenShop-description {
+  margin: 0 !important;
+  width: 100%;
+  max-width: none;
+  font-family: 'Lexend', sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 0 10px;
+  text-align: justify;
+  letter-spacing: .01em;
+  color: #828282;
+  text-align: justify;
+}

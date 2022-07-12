@@ -12,7 +12,9 @@
       "flex-layout.row#promo-sliderCollection",
       "flex-layout.row#multitab-sliderCollection",
       "rich-text#magicClothes-title",
-      "flex-layout.row#grid-categories"
+      "flex-layout.row#grid-categories",
+      "rich-text#childrenShop-title",
+      "rich-text#childrenShop-description"
     ]
   },
 
@@ -477,6 +479,24 @@
       "alt": "categorias niña adolescente",
       "link": "https://www.mic.com.co/mic/teen-nina",
       "blockClass": "grid-categories--image"
+    }
+  },
+
+  "rich-text#childrenShop-title": {
+    "props": {
+      "textAlignment": "center",
+      "textPosition": "center",
+      "text": "# Tienda de ropa infantil",
+      "blockClass": "childrenShop-title"
+    }
+  },
+
+  "rich-text#childrenShop-description": {
+    "props": {
+      "textAlignment": "center",
+      "textPosition": "center",
+      "text": "Descubre lo último en ropa infantil con los personajes de películas y series del momento. \n Encuentra todo en [Superhéroes](https://www.mic.com.co/c/ropa-de-superheroes), personajes de Disney, Marvel, Dc comics, Sanrio y Mucho Más. \n Y disfruta de algunos de los mejores personajes como [Superman](https://www.mic.com.co/c/ropa-de-superman), [Batman](https://www.mic.com.co/c/ropa-de-batman) y más.",
+      "blockClass": "childrenShop-description"
     }
   }
 
