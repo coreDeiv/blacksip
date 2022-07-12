@@ -135,3 +135,13 @@
   width: 100%;
   height: auto !important;
 }
+
+.flexRowContent--grid-categories {
+  flex-wrap: wrap;
+}
+
+.flexRowContent--grid-categories
+.stretchChildrenWidth {
+  width: 50% !important;
+  padding: 5px;
+}

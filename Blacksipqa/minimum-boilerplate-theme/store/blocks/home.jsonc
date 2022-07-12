@@ -10,7 +10,9 @@
       "flex-layout.row#boys-girls",
       "flex-layout.row#boys-girls--titles",
       "flex-layout.row#promo-sliderCollection",
-      "flex-layout.row#multitab-sliderCollection"
+      "flex-layout.row#multitab-sliderCollection",
+      "rich-text#magicClothes-title",
+      "flex-layout.row#grid-categories"
     ]
   },
 
@@ -160,6 +162,19 @@
     ],
     "props": {
       "blockClass": "multiTab-sliderCollection",
+      "fullWidth": false
+    }
+  },
+
+  "flex-layout.row#grid-categories": {
+    "children": [
+      "image#grid-categories--imageBoy",
+      "image#grid-categories--imageGirl",
+      "image#grid-categories--imageTeenBoy",
+      "image#grid-categories--imageTeenGirl"
+    ],
+    "props": {
+      "blockClass": "grid-categories",
       "fullWidth": false
     }
   },
@@ -417,6 +432,51 @@
     "props": {
       "tabId": "mtsc-new",
       "blockClass": "multiTab-sliderCollection--contentItem"
+    }
+  },
+
+  "rich-text#magicClothes-title": {
+    "props": {
+      "textAlignment": "center",
+      "textPosition": "center",
+      "text": "Convertimos Prendas en **Magia**",
+      "blockClass": "magicClothes-title"
+    }
+  },
+
+  "image#grid-categories--imageBoy": {
+    "props": {
+      "src": "/arquivos/cat-boy.jpg",
+      "alt": "categorias niño",
+      "link": "https://www.mic.com.co/mic/nino",
+      "blockClass": "grid-categories--image"
+    }
+  },
+
+  "image#grid-categories--imageGirl": {
+    "props": {
+      "src": "/arquivos/cat-girl.jpg",
+      "alt": "categorias niña",
+      "link": "https://www.mic.com.co/mic/nina",
+      "blockClass": "grid-categories--image"
+    }
+  },
+
+  "image#grid-categories--imageTeenBoy": {
+    "props": {
+      "src": "/arquivos/cat-teenboy.jpg",
+      "alt": "categorias niño adolescente",
+      "link": "https://www.mic.com.co/mic/teen-nino",
+      "blockClass": "grid-categories--image"
+    }
+  },
+
+  "image#grid-categories--imageTeenGirl": {
+    "props": {
+      "src": "/arquivos/cat-teengirl.jpg",
+      "alt": "categorias niña adolescente",
+      "link": "https://www.mic.com.co/mic/teen-nina",
+      "blockClass": "grid-categories--image"
     }
   }
 
