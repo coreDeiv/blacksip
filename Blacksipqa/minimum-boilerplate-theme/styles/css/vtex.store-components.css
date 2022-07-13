@@ -39,8 +39,8 @@
 }
 
 .imageElement--grid-guarantee--item-image {
-  width: auto;
+  width: 100%;
   height: auto;
-  max-width: 100%;
+  max-width: 40px;
   max-height: 40px;
 }

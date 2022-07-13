@@ -15,7 +15,8 @@
       "flex-layout.row#grid-categories",
       "rich-text#childrenShop-title",
       "rich-text#childrenShop-description",
-      "flex-layout.row#grid-guarantee"
+      "flex-layout.row#grid-guarantee",
+      "flex-layout.row#bgImage-preFooter"
     ]
   },
 
@@ -192,6 +193,16 @@
     ],
     "props": {
       "blockClass": "grid-guarantee--container",
+      "fullWidth": false
+    }
+  },
+
+  "flex-layout.row#bgImage-preFooter": {
+    "children": [
+      "flex-layout.col#bgImage-preFooter-content"
+    ],
+    "props": {
+      "blockClass": "bgImage-preFooter-content",
       "fullWidth": false
     }
   },
@@ -653,6 +664,13 @@
       "text": "Seguimiento \n de pedido",
       "blockClass": "grid-guarantee--item-text"
     }
-  }  
+  },
+
+  "flex-layout.col#bgImage-preFooter-content": {
+    "props": {
+      "flex": "1",
+      "blockClass": "bgImage-preFooter-content"
+    }
+  }
 
 }
