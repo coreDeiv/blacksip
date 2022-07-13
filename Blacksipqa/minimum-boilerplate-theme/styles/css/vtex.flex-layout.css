@@ -145,3 +145,28 @@
   width: 50% !important;
   padding: 5px;
 }
+
+.flexRowContent--grid-guarantee--container {
+  max-width: 816px;
+  margin: 75px auto 0 auto;
+}
+
+.flexRow--grid-guarante--item {
+  margin: 0 auto;
+  max-width: 816px;
+}
+
+.flexRow--grid-guarantee--item 
+.flexRowContent
+.stretchChildrenWidth:first-child {
+  width: 25% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexRow--grid-guarantee--item 
+.flexRowContent
+.stretchChildrenWidth:last-child {
+  width: 75% !important;
+}

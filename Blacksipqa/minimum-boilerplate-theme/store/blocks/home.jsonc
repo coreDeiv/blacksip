@@ -14,7 +14,8 @@
       "rich-text#magicClothes-title",
       "flex-layout.row#grid-categories",
       "rich-text#childrenShop-title",
-      "rich-text#childrenShop-description"
+      "rich-text#childrenShop-description",
+      "flex-layout.row#grid-guarantee"
     ]
   },
 
@@ -181,6 +182,20 @@
     }
   },
 
+  "flex-layout.row#grid-guarantee": {
+    "children": [
+      "flex-layout.row#grid-guarantee--paySafe",
+      "flex-layout.row#grid-guarantee--shippingCountry",
+      "flex-layout.row#grid-guarantee--customerSupport",
+      "flex-layout.row#grid-guarantee--freeReturns",
+      "flex-layout.row#grid-guarantee--trackingOrder"
+    ],
+    "props": {
+      "blockClass": "grid-guarantee--container",
+      "fullWidth": false
+    }
+  },
+
   // Sub blocks
 
   "flex-layout.col#sliderCollection": {
@@ -238,6 +253,61 @@
     ],
     "props": {
       "blockClass": "multiTab-sliderCollection--items"
+    }
+  },
+
+  "flex-layout.row#grid-guarantee--paySafe": {
+    "children": [
+      "image#grid-guarantee--paySafe--image",
+      "rich-text#grid-guarantee--paySafe--text"
+    ],
+    "props": {
+      "blockClass": "grid-guarantee--item",
+      "fullWidth": false
+    }
+  },
+
+  "flex-layout.row#grid-guarantee--shippingCountry": {
+    "children": [
+      "image#grid-guarantee--shippingCountry--image",
+      "rich-text#grid-guarantee--shippingCountry--text"
+    ],
+    "props": {
+      "blockClass": "grid-guarantee--item",
+      "fullWidth": false
+    }
+  },
+
+  "flex-layout.row#grid-guarantee--customerSupport": {
+    "children": [
+      "image#grid-guarantee--customerSupport--image",
+      "rich-text#grid-guarantee--customerSupport--text"
+    ],
+    "props": {
+      "blockClass": "grid-guarantee--item",
+      "fullWidth": false
+    }
+  },
+
+  "flex-layout.row#grid-guarantee--freeReturns": {
+    "children": [
+      "image#grid-guarantee--freeReturns--image",
+      "rich-text#grid-guarantee--freeReturns--text"
+    ],
+    "props": {
+      "blockClass": "grid-guarantee--item",
+      "fullWidth": false
+    }
+  },
+
+  "flex-layout.row#grid-guarantee--trackingOrder": {
+    "children": [
+      "image#grid-guarantee--trackingOrder--image",
+      "rich-text#grid-guarantee--trackingOrder--text"
+    ],
+    "props": {
+      "blockClass": "grid-guarantee--item",
+      "fullWidth": false
     }
   },
 
@@ -498,6 +568,91 @@
       "text": "Descubre lo último en ropa infantil con los personajes de películas y series del momento. \n Encuentra todo en [Superhéroes](https://www.mic.com.co/c/ropa-de-superheroes), personajes de Disney, Marvel, Dc comics, Sanrio y Mucho Más. \n Y disfruta de algunos de los mejores personajes como [Superman](https://www.mic.com.co/c/ropa-de-superman), [Batman](https://www.mic.com.co/c/ropa-de-batman) y más.",
       "blockClass": "childrenShop-description"
     }
-  }
+  },
+
+  "image#grid-guarantee--paySafe--image": {
+    "props": {
+      "src": "/arquivos/pay-safe.png",
+      "alt": "pay safe",
+      "blockClass": "grid-guarantee--item-image"
+    }
+  },
+
+  "rich-text#grid-guarantee--paySafe--text": {
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "left",
+      "text": "Pagos \n seguros",
+      "blockClass": "grid-guarantee--item-text"
+    }
+  },
+
+  "image#grid-guarantee--shippingCountry--image": {
+    "props": {
+      "src": "/arquivos/shopping-country.png",
+      "alt": "pay safe",
+      "blockClass": "grid-guarantee--item-image"
+    }
+  },
+
+  "rich-text#grid-guarantee--shippingCountry--text": {
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "left",
+      "text": "Envio a todo \n el pais",
+      "blockClass": "grid-guarantee--item-text"
+    }
+  },
+
+  "image#grid-guarantee--customerSupport--image": {
+    "props": {
+      "src": "/arquivos/customer-support.png",
+      "alt": "pay safe",
+      "blockClass": "grid-guarantee--item-image"
+    }
+  },
+
+  "rich-text#grid-guarantee--customerSupport--text": {
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "left",
+      "text": "Atencion \n al cliente",
+      "blockClass": "grid-guarantee--item-text"
+    }
+  },
+
+  "image#grid-guarantee--freeReturns--image": {
+    "props": {
+      "src": "/arquivos/free-returns.png",
+      "alt": "pay safe",
+      "blockClass": "grid-guarantee--item-image"
+    }
+  },
+
+  "rich-text#grid-guarantee--freeReturns--text": {
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "left",
+      "text": "Devoluciones \n gratuitas",
+      "blockClass": "grid-guarantee--item-text"
+    }
+  },
+
+  "image#grid-guarantee--trackingOrder--image": {
+    "props": {
+      "src": "/arquivos/tracking-order.png",
+      "alt": "pay safe",
+      "blockClass": "grid-guarantee--item-image"
+    }
+  },
+
+  "rich-text#grid-guarantee--trackingOrder--text": {
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "left",
+      "text": "Seguimiento \n de pedido",
+      "blockClass": "grid-guarantee--item-text"
+    }
+  }  
 
 }

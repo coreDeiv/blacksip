@@ -191,3 +191,11 @@
   color: #828282;
   text-align: justify;
 }
+
+.paragraph--grid-guarantee--item-text {
+  color: #131e29;
+  font-family: 'Lexend', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: default;
+}
