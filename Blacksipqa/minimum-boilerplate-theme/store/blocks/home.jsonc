@@ -18,7 +18,8 @@
       "flex-layout.row#grid-guarantee",
       "flex-layout.row#bgImage-preFooter",
       // "flex-layout.row#form"
-      "newsletter#basic-newsletter"
+      "newsletter#basic-newsletter",
+      "flex-layout.row#payment-methods"
     ]
   },
 
@@ -205,6 +206,16 @@
     ],
     "props": {
       "blockClass": "bgImage-preFooter-content",
+      "fullWidth": false
+    }
+  },
+
+  "flex-layout.row#payment-methods": {
+    "children": [
+      "image#payment-methods--image"
+    ],
+    "props": {
+      "blockClass": "payment-methods",
       "fullWidth": false
     }
   },
@@ -674,6 +685,21 @@
       "blockClass": "bgImage-preFooter-content"
     }
   },
+
+  "newsletter#basic-newsletter": {
+    "props": {
+      "label": "Espacio para el Newsletter modificado por Master Data",
+      "blockClass": "basic-newsletter"
+    }
+  },
+
+  "image#payment-methods--image": {
+    "props": {
+      "src": "/arquivos/payment-methods.png",
+      "alt": "payment methods",
+      "blockClass": "payment-methods--image"
+    }
+  }
   
   /* --- Special Blocks --- */
 
@@ -775,12 +801,5 @@
       "label": "Suscribirme"
     }
   }*/
-
-  "newsletter#basic-newsletter": {
-    "props": {
-      "label": "Espacio para el Newsletter modificado por Master Data",
-      "blockClass": "basic-newsletter"
-    }
-  }
 
 }
